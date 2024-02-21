@@ -841,4 +841,47 @@ header nav .form i {
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
+.our-skills .skills .prog-holder{
+    margin-bottom: 40px;
+}
+.our-skills .skills .prog-holder h4{
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.our-skills .skills .prog-holder .prog{
+    background-color: #DEDADC;
+    height: 30px;
+}
+.our-skills .skills .prog-holder .prog span{
+    display: block;
+    background-color: var(--main-color);
+    height: 100%;
+    position: relative;
+}
+.our-skills .skills .prog-holder .prog span::before{
+    content: attr(data-progress);
+    position: absolute;
+    color: white;
+    background-color: black;
+    top: -40px;
+    right: -18px;
+    padding: 4px 0;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.our-skills .skills .prog-holder .prog span::after{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black transparent transparent transparent;
+    right: -8px;
+    top: -14px;
+}
 /*End Skills*/
